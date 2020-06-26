@@ -1,0 +1,15 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+    int num1,num2,val;
+    char name1[1000],name2[100],name3[100];
+    cin>>val;
+    while(val--){
+        gets(name1);
+        getchar();
+    }
+    cout<<"Ciencia da Computacao"<<endl;
+    return 0;
+}
+ 
