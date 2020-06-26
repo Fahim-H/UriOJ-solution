@@ -1,0 +1,20 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+    double num,box[2];
+    int temp=0;
+    while(true){
+        cin>>num;
+        if(num>=0 && num<=10){
+            box[temp]=num;
+            temp++;
+        }
+        else
+            cout<<"nota invalida"<<endl;
+        if(temp>1)
+            break;
+    }
+    cout<<"media = "<<fixed<<setprecision(2)<<(box[0]+box[1])/2<<endl;
+    return 0;
+}
