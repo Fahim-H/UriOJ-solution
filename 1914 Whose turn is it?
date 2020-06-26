@@ -1,0 +1,26 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main(){
+    int num1,num2,val;
+    string s1,s2,name1,name2;
+    cin>>val;
+    for (int i=0;i<val;i++){
+        cin>>name1>>s1>>name2>>s2;
+        cin>>num1>>num2;
+        int cal=num1+num2;
+        if(cal%2==0){
+            if(s1=="PAR")
+            cout<<name1<<endl;
+            else
+            cout<<name2<<endl;
+        }
+        if(cal%2==1){
+            if(s1=="IMPAR")
+            cout<<name1<<endl;
+            else
+            cout<<name2<<endl;
+        }
+    }
+    return 0;
+}
