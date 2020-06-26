@@ -1,0 +1,31 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int n,num,rabbit=0,rat=0,frog=0;
+    char animal;
+    cin>>n;
+    while(n--){
+        cin>>num>>animal;
+        if(animal=='C')
+            rabbit=rabbit+num;
+        else if(animal=='R')
+            rat=rat+num;
+        else if(animal=='S')
+            frog=frog+num;
+    }
+    int total=rabbit+rat+frog;
+    double rabbittage,rattage,frogage;
+    rabbittage=(rabbit/(total*1.0))*100.00;
+    rattage=(rat/(total*1.0))*100.00;
+    frogage=(frog/(total*1.0))*100.00;
+    cout<<"Total: "<<total<<" cobaias"<<endl;
+    cout<<"Total de coelhos: "<<rabbit<<endl;
+    cout<<"Total de ratos: "<<rat<<endl;
+    cout<<"Total de sapos: "<<frog<<endl;
+    cout<<"Percentual de coelhos: "<<fixed<<setprecision(2)<<rabbittage<<" %"<<endl;
+    cout<<"Percentual de ratos: "<<fixed<<setprecision(2)<<rattage<<" %"<<endl;
+    cout<<"Percentual de sapos: "<<fixed<<setprecision(2)<<frogage<<" %"<<endl;
+    return 0;
+}
