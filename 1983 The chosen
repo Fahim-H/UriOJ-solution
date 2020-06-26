@@ -1,0 +1,26 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+    int stdn,note=0;
+    cin>>stdn;
+    int box[stdn];
+    double max=0.0,num[stdn];
+    for(int i=0;i<stdn;i++)
+        cin>>box[i]>>num[i];
+    for(int i=0;i<stdn;i++)
+    {
+        if(num[i]>max)
+        {
+            max=num[i];
+            note=i;
+        }
+    }
+ 
+    if(max<8)
+        cout<<"Minimum note not reached"<<endl;
+    else
+        cout<<box[note]<<endl;
+    return 0;
+}
+ 
