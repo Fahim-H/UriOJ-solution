@@ -1,0 +1,29 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    string ds1,ds2;
+    char c1,c2,c3,c4;
+    int day1,day2,h1,h2,m1,m2,s1,s2;
+    cin>>ds1>>day1;
+    cin>>h1>>c1>>m1>>c2>>s1;
+    cin>>ds2>>day2;
+    cin>>h2>>c3>>m2>>c4>>s2;
+    int total_ds1=(day1*(24*3600))+(h1*3600)+(m1*60)+s1;
+    int total_ds2=(day2*(24*3600))+(h2*3600)+(m2*60)+s2;
+    int tdr=total_ds2-total_ds1;
+    int day=tdr/86400;
+    tdr=tdr%86400;
+    int hour=tdr/3600;
+    tdr=tdr%3600;
+    int minute=tdr/60;
+    tdr=tdr%60;
+ 
+    cout<<day<<" dia(s)"<<endl<<hour<<" hora(s)"<<endl<<minute<<
+    " minuto(s)"<<endl<<tdr<<" segundo(s)"<<endl;
+ 
+ 
+    return 0;
+}
+ 
