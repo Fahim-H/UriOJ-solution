@@ -1,0 +1,26 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int n,num1,num2,sum=0,temp;
+    while(true){
+        cin>>num1>>num2;
+        sum=0;
+        if(num1<=0 || num2<=0)
+            break;
+        if(num1>num2){
+            temp=num1;
+            num1=num2;
+            num2=temp;
+        }
+        for(int i=num1;i<=num2;i++){
+            cout<<i<<" ";
+            sum=sum+i;
+        }
+     cout<<"Sum="<<sum<<endl;
+    }
+ 
+    return 0;
+}
+ 
