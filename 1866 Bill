@@ -1,0 +1,16 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+    int val,num;
+    cin>>val;
+    while(val--){
+        cin>>num;
+        if(num%2==0)
+            cout<<"0"<<endl;
+        else
+            cout<<"1"<<endl;
+    }
+    return 0;
+}
+ 
