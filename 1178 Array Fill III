@@ -1,0 +1,15 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+    double num,box[100];
+    cin>>num;
+    for(int i=0;i<100;i++){
+        box[i]=num;
+        num=num/2;
+    }
+    for(int i=0;i<100;i++)
+        cout<<"N["<<i<<"] = "<<fixed<<setprecision(4)<<box[i]<<endl;
+    return 0;
+}
+ 
