@@ -1,0 +1,25 @@
+//#include <bits/stdc++.h>
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+ 
+int main(){
+    int hour1,hour2,rest;
+    cin>>hour1>>hour2;
+    if(hour1>12 && hour2<13){
+        rest=24-hour1;
+        //cout<<rest<<endl;
+        cout<<"O JOGO DUROU "<<rest+hour2<<" HORA(S)"<<endl;
+    }
+    else if(hour1<13 && hour2>12){
+        cout<<"O JOGO DUROU "<<hour2-hour1<<" HORA(S)"<<endl;
+    }
+    else if(hour2==hour2){
+        cout<<"O JOGO DUROU 24 HORA(S)"<<endl;
+    }
+ 
+    //cout<<"O JOGO DUROU "<<hour1-hour2<<" HORA(S)"<<endl;
+    return 0;
+}
+ 
