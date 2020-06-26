@@ -1,0 +1,22 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+    int num1,num2,count=0,diff;
+    cin>>num1>>num2;
+    int box[num2];
+    for(int i=0;i<num2;i++){
+        cin>>box[i];
+        if(box[i]>box[i-1])
+            diff=box[i]-box[i-1];
+        else
+            diff=box[i-1]-box[i];
+        if(diff<=num1)
+            count++;
+    }
+    if(count==num2-1)
+        cout<<"YOU WIN"<<endl;
+    else
+        cout<<"GAME OVER"<<endl;
+    return 0;
+}
